@@ -23,7 +23,7 @@ async function handleTranslate() {
         isTranslating = true;
         showStatus('翻译中...', 'loading');
         
-        const response = await fetch('https://api.render.com/deploy/srv-cvrt4p24d50c73d5i7kg?key=NXyuvG6sTRc', {
+        const response = await fetch('https://translatorh5-test.onrender.com/translate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
