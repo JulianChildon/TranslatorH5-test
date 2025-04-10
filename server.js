@@ -1,6 +1,10 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+app.use(cors({
+    origin: ['https://julianchildon.github.io/TranslatorH5-test/'],
+    methods: ['GET', 'POST']
+  }));
 const CryptoJS = require('crypto-js');
 const request = require('request');
 
@@ -96,10 +100,3 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
-const cors = require('cors');
-
-// 允许 GitHub Pages 的域名（替换为你的实际域名）
-app.use(cors({
-  origin: ['https://julianchildon.github.io/TranslatorH5-test/'],
-  methods: ['GET', 'POST']
-}));
