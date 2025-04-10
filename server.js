@@ -1,15 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-app.use(cors({
-    origin: ['https://julianchildon.github.io/TranslatorH5-test/'],
-    methods: ['GET', 'POST']
-  }));
 const CryptoJS = require('crypto-js');
 const request = require('request');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: ['https://julianchildon.github.io/TranslatorH5-test/'],
+    methods: ['GET', 'POST']
+  }));
 app.use(express.json());
 
 const config = {
