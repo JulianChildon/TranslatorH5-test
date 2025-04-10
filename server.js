@@ -6,9 +6,12 @@ const request = require('request');
 
 const app = express();
 app.use(cors({
-    origin: ['https://julianchildon.github.io/TranslatorH5-test/'],
+    origin: [
+        'https://julianchildon.github.io',
+        'https://julianchildon.github.io/TranslatorH5-test/'
+    ],
     methods: ['GET', 'POST']
-  }));
+}));
 app.use(express.json());
 
 const config = {
