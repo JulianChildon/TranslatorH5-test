@@ -14,8 +14,8 @@ async function handleTranslate() {
         showStatus('请输入要翻译的内容', 'error');
         return;
     }
-    if (input.length > 2000) {
-        showStatus('内容长度不能超过2000字', 'error');
+    if (input.length > 12000) {
+        showStatus('内容长度不能超过12000字', 'error');
         return;
     }
 
